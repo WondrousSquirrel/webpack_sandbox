@@ -11,6 +11,15 @@ module.exports = {
         print: './src/print.js'
     },
     devtool: 'inline-source-map',
+    devServer: {
+        /**
+         * webpack-dev-server не пишет никаких файлов после компиляции,
+         * он сохраняет все изменения в памяти и "обслуживает" их
+         * как будто они реальны. Если страница ожидает найти путь к сборке в другом месте,
+         * то изменить можно с помощью publicPath опции
+         */
+        contentBase: './dist'
+    },
     plugins: [
         // оставляет только с генерированные файлы в директории /dist
         new CleanWebpackPlugin(['dist']),
@@ -22,7 +31,8 @@ module.exports = {
     ],
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'
     },
     module: {
         rules: [
