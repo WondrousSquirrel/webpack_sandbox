@@ -1,0 +1,22 @@
+{
+  "name": "webpack_starter",
+  "version": "1.0.0",
+  "description": "trying to build something with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack --config webpack"   
+  },
+  "_comments": "local installation of webpack" ,
+  "keywords": [
+    "webpack",
+    "js",
+    "bundle"
+  ],
+  "author": "Alexander Antoschuk",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
