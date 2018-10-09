@@ -21,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.6.1",
+    "file-loader": "^2.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"

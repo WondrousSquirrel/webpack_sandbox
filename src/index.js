@@ -5,12 +5,18 @@
  * */ 
 import _ from 'lodash';
 import './style.css';
+import Icon from './icon.png';
 
 function component () {
     let element = document.createElement('div');
 
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     element.classList.add('hello');
+
+    // Добавление favicon`а на страницу
+    document.querySelector("link[rel='shortcut icon'").href = Icon;
+
+
     return element;
 }
 
