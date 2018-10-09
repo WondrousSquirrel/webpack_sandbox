@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Montserrat-Regular.ttf') format('montserrat');
+    font-weight: 800;
+    font-style: italic;
+}
+
 .hello {
     color: red;
+    font-family: 'Montserrat';
 }
