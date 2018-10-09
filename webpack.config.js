@@ -10,6 +10,7 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js'
     },
+    devtool: 'inline-source-map',
     plugins: [
         // оставляет только с генерированные файлы в директории /dist
         new CleanWebpackPlugin(['dist']),
