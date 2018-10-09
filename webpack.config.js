@@ -1,6 +1,8 @@
 const path = require('path');
 
+// Плагины
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     // entry: './src/index.js',
@@ -9,10 +11,12 @@ module.exports = {
         print: './src/print.js'
     },
     plugins: [
+        // оставляет только с генерированные файлы в директории /dist
+        new CleanWebpackPlugin(['dist']),
         // данный плагин создает index.html и замещает уже существующий
         new HtmlWebpackPlugin({
-            title: 'Output Management',
-            template: './src/index.html'
+            title: 'Hello Webpack!!',
+            template: './src/template.html'
         })
     ],
     output: {

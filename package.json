@@ -20,6 +20,7 @@
   "author": "Alexander Antoschuk",
   "license": "MIT",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
     "csv-loader": "^3.0.2",
     "eslint": "^5.6.1",
     "file-loader": "^2.0.0",
