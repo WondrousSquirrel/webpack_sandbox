@@ -2,12 +2,15 @@
   "name": "webpack_starter",
   "version": "1.0.0",
   "description": "trying to build something with webpack",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/webpack --config webpack"   
   },
-  "_comments": "local installation of webpack" ,
+  "_comments": {
+    "start": "local installation of webpack" ,
+    "private true": "doc says - This is to prevent an accidental publish of your code."
+   },
   "keywords": [
     "webpack",
     "js",
