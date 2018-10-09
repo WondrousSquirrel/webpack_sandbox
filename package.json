@@ -5,12 +5,12 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/webpack --config webpack"   
+    "start": "node_modules/.bin/webpack --config webpack"
   },
   "_comments": {
-    "start": "local installation of webpack" ,
+    "start": "local installation of webpack",
     "private true": "doc says - This is to prevent an accidental publish of your code."
-   },
+  },
   "keywords": [
     "webpack",
     "js",
@@ -19,7 +19,11 @@
   "author": "Alexander Antoschuk",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^5.6.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
