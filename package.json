@@ -20,11 +20,13 @@
   "author": "Alexander Antoschuk",
   "license": "MIT",
   "devDependencies": {
+    "csv-loader": "^3.0.2",
     "eslint": "^5.6.1",
     "file-loader": "^2.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "xml-loader": "^1.2.1"
   },
   "dependencies": {
     "css-loader": "^1.0.0",

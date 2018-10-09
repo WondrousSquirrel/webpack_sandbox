@@ -6,6 +6,7 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';
+import Data from './data.xml'
 
 function component () {
     let element = document.createElement('div');
@@ -16,6 +17,7 @@ function component () {
     // Добавление favicon`а на страницу
     document.querySelector("link[rel='shortcut icon'").href = Icon;
 
+    console.log(Data);
 
     return element;
 }
