@@ -4,9 +4,9 @@
  * в index.html  
  * */ 
 import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
-import Data from './data.xml'
+import './Components/index_component/style.css';
+import Icon from './Components/index_component/icon.png';
+import Data from './Components/index_component/data.xml'
 
 function component () {
     let element = document.createElement('div');
