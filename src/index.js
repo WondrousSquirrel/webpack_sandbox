@@ -28,4 +28,17 @@ function component () {
     return element;
 }
 
-document.body.appendChild(component());
+//document.body.appendChild(component());
+
+let element = component();  // сохраняем элемент для перерисовки
+document.body.appendChild(element);
+
+if (module.hot) {
+    module.hot.accept('./print.js', () => {
+        console.log('Accepting the updated printMe module');
+        // printMe();
+        document.body.removeChild(element);
+        element = component(); // заново рендерим компонент для обновления события
+        document.body.appendChild(element);
+    })
+}

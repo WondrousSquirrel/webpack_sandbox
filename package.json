@@ -38,6 +38,8 @@
   },
   "dependencies": {
     "css-loader": "^1.0.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "save-dev": "^2.0.0",
+    "webpack-hot-middleware": "^2.24.3"
   }
 }
