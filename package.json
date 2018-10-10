@@ -1,5 +1,9 @@
 {
   "name": "webpack_starter",
+  "sideEffects": [
+    "./src/math.js",
+    "*.css"
+  ],
   "version": "1.0.0",
   "description": "trying to build something with webpack",
   "private": true,
@@ -13,7 +17,8 @@
   },
   "_comments": {
     "start": "local installation of webpack",
-    "private true": "doc says - This is to prevent an accidental publish of your code."
+    "private true": "doc says - This is to prevent an accidental publish of your code.",
+    "sideEffects": "can also be set from the module.rules config option"
   },
   "keywords": [
     "webpack",
@@ -43,3 +48,4 @@
     "webpack-hot-middleware": "^2.24.3"
   }
 }
+
